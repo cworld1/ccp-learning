@@ -12,17 +12,20 @@ export default defineConfig({
   cleanUrls: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/ico', href: '/logo_x128.ico' }],
-    ['meta', { name: 'theme-color', content: '#a8b1ff' }],
-    ['meta', { name: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:locale', content: 'cn' }],
-    ['meta', { name: 'og:site_name', content: 'CWorld Project' }],
-    ['meta', { name: 'og:image', content: 'https://ccp.cworld.top/computer_desk.png' }],
+    ["link", { rel: "icon", type: "image/ico", href: "/logo_x128.ico" }],
+    ["meta", { name: "theme-color", content: "#a8b1ff" }],
+    ["meta", { name: "og:type", content: "website" }],
+    ["meta", { name: "og:locale", content: "cn" }],
+    ["meta", { name: "og:site_name", content: "CWorld Project" }],
+    [
+      "meta",
+      { name: "og:image", content: "https://ccp.cworld.top/computer_desk.png" },
+    ],
   ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: { src: '/logo_x128.ico', width: 24, height: 24 },
+    logo: { src: "/logo_x128.ico", width: 24, height: 24 },
 
     outline: [2, 3],
 
@@ -154,6 +157,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           collapsed: true,
           items: [{ text: "外部设备 (1~3)", link: "/18-exter-device-1" }],
         },
+        { text: "复习课内容", link: "/ex-review-lesson" },
+        { text: "零碎知识点", link: "/ex-acknowledges" },
       ],
     },
   ];
