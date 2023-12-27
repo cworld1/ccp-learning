@@ -1,14 +1,17 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "计算机组成原理",
   description: "计算机组成原理课程笔记",
+  markdown: {
+    math: true,
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "Home", link: "/" },
+      { text: "Intro", link: "/00-summary" },
     ],
 
     sidebar: [
@@ -100,7 +103,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
+  },
+});
