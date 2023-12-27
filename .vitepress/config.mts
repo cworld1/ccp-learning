@@ -13,7 +13,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: { src: '/src/logo_x128.ico', width: 24, height: 24 },
+    logo: { src: '/logo_x128.ico', width: 24, height: 24 },
 
     outline: [2, 3],
 

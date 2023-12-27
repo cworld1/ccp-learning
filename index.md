@@ -14,7 +14,7 @@ hero:
       text: Project Intro
       link: /README
   image:
-    src: /src/computer_desk.png
+    src: /computer_desk.png
     alt: VitePress
 
 features:
