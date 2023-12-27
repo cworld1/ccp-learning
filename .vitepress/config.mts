@@ -11,6 +11,15 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
 
+  head: [
+    ['link', { rel: 'icon', type: 'image/ico', href: '/logo_x128.ico' }],
+    ['meta', { name: 'theme-color', content: '#a8b1ff' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'cn' }],
+    ['meta', { name: 'og:site_name', content: 'CWorld Project' }],
+    ['meta', { name: 'og:image', content: 'https://ccp.cworld.top/computer_desk.png' }],
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/logo_x128.ico', width: 24, height: 24 },
