@@ -12,7 +12,7 @@ export default defineConfig({
   cleanUrls: true,
 
   head: [
-    ["link", { rel: "icon", type: "image/ico", href: "/logo_x128.ico" }],
+    ["link", { rel: "icon", type: "image/ico", href: "/favicon.ico" }],
     ["meta", { name: "theme-color", content: "#a8b1ff" }],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "cn" }],
@@ -25,7 +25,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: { src: "/logo_x128.ico", width: 24, height: 24 },
+    logo: { src: "/favicon.ico", width: 24, height: 24 },
 
     outline: [2, 3],
 
