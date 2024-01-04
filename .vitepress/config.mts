@@ -21,6 +21,14 @@ export default defineConfig({
       "meta",
       { name: "og:image", content: "https://ccp.cworld.top/computer_desk.png" },
     ],
+    ['script', {}, `
+      setTimeout(function() {
+        var script = document.createElement('script');
+        script.src = 'https://busuanzi.icodeq.com/busuanzi.pure.mini.js';
+        document.head.appendChild(script);
+        console.log('Custom script loaded');
+      }, 2000);
+    `]
   ],
 
   themeConfig: {
@@ -50,7 +58,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: "Released under the GPL-3 License.",
+      message:
+        'Released under the GPL-3 License. (<span id="busuanzi_value_site_pv">???</span> views totally)',
       copyright: "Copyright © 2023-present CWorld",
     },
 
